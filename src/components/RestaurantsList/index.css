@@ -1,0 +1,142 @@
+.all-restaurants {
+  padding-inline-start: 0px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.restaurantList-button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.arrow-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: 'Bree Serif';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #334155;
+}
+
+.popular-heading {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 48px;
+  color: #183b56;
+}
+
+.popular-desc {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #64748b;
+}
+
+.select-container {
+  border: none;
+  color: #183b56;
+  font-size: 15px;
+}
+.option-desc {
+  font-family: 'Roboto';
+  font-size: 15px;
+}
+
+.sort-by-select {
+  font-family: 'Roboto';
+  font-size: 15px;
+  font-weight: 400;
+  width: 100px;
+  height: 23px;
+  border: none;
+  cursor: pointer;
+}
+
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.restaurant-input-container {
+  border: 1px solid gray;
+  display: flex;
+  flex-direction: row;
+  width: 220px;
+}
+
+.searching-input {
+  margin: 10px;
+  border: none;
+  outline: none;
+  width: 150px;
+}
+.search-icon {
+  margin: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.no-results-view {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.no-results-img {
+  width: 350px;
+}
+
+/* .select-option {
+  padding: 0;
+} */
+.filter-icon-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 250px;
+}
+.filter-icon {
+  margin: 10px;
+}
+
+.no-products-heading {
+  text-align: center;
+}
+.no-products-desc {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .all-restaurants {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .popular-heading {
+    font-size: 34px;
+  }
+
+  .no-results-img {
+    width: 600px;
+  }
+  .popular-desc {
+    font-size: 16px;
+  }
+  .row-align {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

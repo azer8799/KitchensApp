@@ -1,0 +1,37 @@
+.cart-list {
+  padding-inline-start: 0px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.table-header {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #475569;
+}
+
+.cart-list-align {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .cart-list-align {
+    display: flex;
+    justify-content: space-between;
+
+    width: 700px;
+    padding: 20px;
+    margin-bottom: 15px;
+    margin-left: 70px;
+    padding-left: 80px;
+  }
+  .header-quantity {
+    margin-left: 100px;
+  }
+}

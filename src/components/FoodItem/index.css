@@ -1,0 +1,94 @@
+.food-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.food-item-image {
+  width: 150px;
+  height: 100px;
+  border-radius: 6px;
+  margin-top: 5px;
+  flex-shrink: 0;
+}
+
+.food-item-title {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #334155;
+  margin-left: 10px;
+  margin-top: 0;
+}
+
+.food-item-desc {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  color: #334155;
+  margin-left: 10px;
+}
+
+.card-image-container {
+  display: flex;
+  padding: 0px;
+}
+
+.add-button {
+  background-color: transparent;
+  border: 1px solid #ffa412;
+  color: #ffa412;
+  padding: 5px;
+  border-radius: 12px;
+  width: 50px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.location {
+  display: flex;
+  justify-content: space-between;
+}
+
+.star {
+  width: 30px;
+}
+.food-item-rating {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  color: #1e293b;
+}
+
+.card-content-align {
+  display: flex;
+  flex-direction: column;
+}
+
+.rating-container {
+  display: flex;
+}
+
+.plus-minus-container {
+  display: flex;
+  margin-left: 10px;
+}
+
+.quantity-desc {
+  margin-left: 7px;
+  margin-right: 7px;
+}
+
+.quantity-button {
+  cursor: pointer;
+  font-size: 16px;
+}

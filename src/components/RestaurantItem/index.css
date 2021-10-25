@@ -1,0 +1,84 @@
+* {
+  color: black;
+}
+
+.card-image-container {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  width: 300px;
+  height: 150px;
+  padding: 5px;
+}
+.link-container {
+  text-decoration: none;
+}
+
+.thumbnail-img {
+  width: 160px;
+  height: 100px;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.card-image-container {
+  display: flex;
+  flex-direction: row;
+}
+.card-content-align {
+  display: flex;
+  flex-direction: column;
+}
+.restaurant-item-title {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 0;
+  margin-left: 8px;
+  color: #334155;
+}
+
+.restaurant-item-star-align {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0px;
+}
+
+.star-icon {
+  font-size: 20px;
+  margin: 8px;
+}
+
+.restaurant-item-rating {
+  margin-top: 9px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.restaurant-item-cuisine {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  color: grey;
+  margin-top: 0;
+  margin-left: 8px;
+}
+
+@media (min-width: 768px) {
+  .card-image-container {
+    width: 400px;
+    height: 130px;
+    padding: 5px;
+  }
+  .restaurant-item-title {
+    font-size: 18px;
+  }
+
+  .restaurant-item-cuisine {
+    font-size: 14px;
+  }
+}

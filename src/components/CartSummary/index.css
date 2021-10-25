@@ -1,0 +1,43 @@
+.cart-summary-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.order-total-desc {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #3e4c59;
+}
+
+.summary-total-price {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: right;
+  color: #3e4c59;
+}
+
+.cart-total-container {
+  margin-right: 20px;
+}
+
+.place-order-button {
+  background-color: #ffa412;
+  border: none;
+  color: #fff;
+  padding: 15px;
+  border-radius: 15px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+}

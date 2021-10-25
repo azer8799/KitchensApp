@@ -1,0 +1,42 @@
+.payments-page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.tick-mark {
+  width: 65px;
+  height: 65px;
+}
+
+.payments-heading {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+  color: #1e293b;
+}
+
+.payments-desc {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #64748b;
+}
+
+.back-btn {
+  padding: 15px;
+  border: none;
+  font-size: 15px;
+  border-radius: 10px;
+  color: #ffff;
+  background: #f7931e;
+  cursor: pointer;
+}

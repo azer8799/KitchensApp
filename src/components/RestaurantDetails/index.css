@@ -1,0 +1,124 @@
+.link-item {
+  text-decoration: none;
+}
+
+.product-details-container {
+  background-image: url('../BackgroundImages/foodItem1.png'),
+    url('../BackgroundImages/foodItem2.png'),
+    url('../BackgroundImages/foodItem3.png'),
+    url('../BackgroundImages/foodItem4.png');
+  background-position: top right, bottom right, bottom left, center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #333333;
+  margin-top: 20px;
+}
+
+.banner-food-image {
+  width: 50vw;
+  height: 100px;
+  border-radius: 10px;
+  margin: 8px;
+  flex-grow: 0;
+}
+
+.label-value-container {
+  display: flex;
+  flex-direction: column;
+  border-right: 2px solid gray;
+  padding-right: 20px;
+}
+
+.restaurant-details {
+  margin-left: 10px;
+}
+
+.card-image-container {
+  display: flex;
+}
+
+.star {
+  width: 15px;
+  height: 15px;
+}
+
+.rating-cost-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 5px;
+}
+.rating-and-reviews-count {
+  margin-left: 15px;
+}
+
+.card-content-align {
+  display: flex;
+  flex-direction: column;
+}
+
+.rating-container {
+  display: flex;
+}
+
+.foodItem-list {
+  padding-inline-start: 0px;
+  list-style-type: none;
+}
+
+.job-details-container {
+  background-color: black;
+  min-height: 100vh;
+  padding: 15px;
+}
+
+.restaurant-name {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+}
+
+.restaurant-subDesc {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: #fff;
+  margin: 0px;
+}
+
+@media (min-width: 768px) {
+  .banner-food-image {
+    width: 345px;
+    height: 230px;
+    border-radius: 10px;
+    margin: 20px;
+  }
+  .restaurant-name {
+    font-size: 30px;
+    line-height: 48px;
+  }
+  .restaurant-subDesc {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .rating-cost-container {
+    margin-top: 25px;
+  }
+
+  .restaurant-details {
+    flex-grow: 1;
+  }
+
+  .foodItem-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
