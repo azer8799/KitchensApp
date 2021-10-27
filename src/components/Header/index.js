@@ -8,7 +8,6 @@ import {GiHamburgerMenu} from 'react-icons/gi'
 import Cookies from 'js-cookie'
 
 import './index.css'
-// import CartContext from '../../context/CartContext'
 
 class Header extends Component {
   state = {
@@ -28,17 +27,6 @@ class Header extends Component {
     Cookies.remove('jwt_token')
     history.replace('/login')
   }
-
-  //   renderCount = () => (
-  //     <CartContext.Consumer>
-  //       {value => {
-  //         const {cartList} = value
-  //         const cartCount = cartList.length
-
-  //         return cartCount > 0 && <span>{cartCount}</span>
-  //       }}
-  //     </CartContext.Consumer>
-  //   )
 
   render() {
     const {showNavbar} = this.state

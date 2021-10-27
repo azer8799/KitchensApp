@@ -58,6 +58,7 @@ class RestaurantsList extends Component {
     imageUrl: data.image_url,
     name: data.name,
     rating: data.user_rating.rating,
+    totalReviews: data.user_rating.total_reviews,
   })
 
   changeSearchInput = event => {
@@ -159,7 +160,7 @@ class RestaurantsList extends Component {
 
     return (
       <div className="container">
-        <ul className="all-restaurants" testid="restaurant-item">
+        <ul className="all-restaurants">
           {restaurantData.map(eachItem => (
             <RestaurantItem restDetails={eachItem} key={eachItem.id} />
           ))}
@@ -200,7 +201,7 @@ class RestaurantsList extends Component {
                 </p>
                 <div className="filter-icon-container">
                   <BsFilterLeft fontSize="25px" className="filter-icon" />
-                  <p className="option-desc">Sort By</p>
+                  <p className="option-desc">Sort By Rating</p>
 
                   <select
                     className="sort-by-select"
@@ -244,7 +245,7 @@ class RestaurantsList extends Component {
               <BsArrowLeftCircle color="green" />
             </button>
             <span className="desc" testid="active-page-number">
-              {activePage}
+              {activePage} of 4
             </span>
             <button
               onClick={this.forwardButton}

@@ -87,7 +87,7 @@ class LoginForm extends Component {
 
           <img
             src="/img/LandingSmall.png"
-            alt="website logo"
+            alt="website login"
             className="landing-small-img"
           />
           <h1 className="logo-heading"> Tasty Kitchens </h1>
@@ -129,10 +129,10 @@ class LoginForm extends Component {
               />
             )}
           </div>
+          {showSubmitError && <p className="error-message">*{errorMsg}</p>}
           <button type="submit" className="login-button">
             Login
           </button>
-          {showSubmitError && <p className="error-message">*{errorMsg}</p>}
         </form>
 
         <img

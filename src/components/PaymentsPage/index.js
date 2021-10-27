@@ -9,7 +9,7 @@ const PaymentsPage = () => (
       <img src="/img/CheckCircle.png" alt="tick" className="tick-mark" />
       <h1 className="payments-heading">Payment Successful</h1>
       <p className="payments-desc">
-        Thank you for ordering <br /> Your payment is successfully completed
+        Thank you for ordering <br /> Your payment is successfully completed.
       </p>
 
       <Link to="/">

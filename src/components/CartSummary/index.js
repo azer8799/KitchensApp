@@ -16,7 +16,9 @@ const CartSummary = () => (
         <div className="cart-summary-container">
           <h1 className="order-total-desc">Order Total:</h1>
           <div className="cart-total-container">
-            <p className="summary-total-price">Rs {total}</p>
+            <p className="summary-total-price" testid="total-price">
+              Rs {total}
+            </p>
             <Link to="/payment">
               <button type="button" className="place-order-button">
                 Place Order

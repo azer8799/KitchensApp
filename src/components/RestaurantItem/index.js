@@ -5,6 +5,7 @@ import {AiFillStar} from 'react-icons/ai'
 
 const RestaurantItem = props => {
   const {restDetails} = props
+  console.log(restDetails)
   const {
     // hasOnlineDelivery,
     // hasTableBooking,
@@ -16,6 +17,7 @@ const RestaurantItem = props => {
     // groupByTime,
     // opensAt,
     // location,
+    totalReviews,
     imageUrl,
     name,
     rating,
@@ -27,10 +29,14 @@ const RestaurantItem = props => {
           <img src={imageUrl} alt="restaurant" className="thumbnail-img" />
           <div className="card-content-align">
             <h1 className="restaurant-item-title">{name}</h1>
+
             <p className="restaurant-item-cuisine"> {cuisine}</p>
             <div className="restaurant-item-star-align">
               <AiFillStar fill="#FFCC00" className="star-icon" />
               <p className="restaurant-item-rating">{rating}</p>
+              <h1 className="restaurant-item-reviews">
+                ({totalReviews} ratings)
+              </h1>
             </div>
           </div>
         </div>

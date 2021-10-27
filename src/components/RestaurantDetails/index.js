@@ -2,6 +2,7 @@ import {Component} from 'react'
 import {Link} from 'react-router-dom'
 import Cookies from 'js-cookie'
 import Loader from 'react-loader-spinner'
+import {BiRupee} from 'react-icons/bi'
 import FoodItem from '../FoodItem'
 
 import './index.css'
@@ -138,12 +139,17 @@ class RestaurantDetails extends Component {
                     alt="star"
                     className="star"
                   />
-                  <p className="restaurant-subDesc">{rating}</p>
+                  <span className="restaurant-subDesc">{rating}</span>
                 </div>
-                <p className="restaurant-subDesc">{reviewsCount}+ Ratings</p>
+                <span className="restaurant-subDesc">
+                  {reviewsCount}+ Ratings
+                </span>
               </div>
               <div className="rating-and-reviews-count">
-                <p className="restaurant-subDesc">{costForTwo} </p>
+                <p className="restaurant-subDesc">
+                  <BiRupee className="rupee-icon" fill="#fff" />
+                  {costForTwo}
+                </p>
                 <p className="restaurant-subDesc">Cost for two</p>
               </div>
             </div>

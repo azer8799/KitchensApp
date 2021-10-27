@@ -1,4 +1,5 @@
 import {AiFillCloseCircle} from 'react-icons/ai'
+import {BiRupee} from 'react-icons/bi'
 
 import CartContext from '../../context/CartContext'
 
@@ -15,7 +16,7 @@ const CartItem = props => (
       const {cartItemDetails} = props
       const {name, cost, id, imageUrl, quantity} = cartItemDetails
 
-      const totalPrice = cost * quantity
+      const totalCost = cost * quantity
       const onRemoveCartItem = () => {
         removeCartItem(id)
       }
@@ -59,8 +60,9 @@ const CartItem = props => (
           </div>
 
           <div className="price-icon-container">
-            <p className="cart-total-price" testid="total-price">
-              {totalPrice}
+            <p className="cart-total-price">
+              <BiRupee className="rupee-icon" fill="#ffa412" />
+              {totalCost}
             </p>
             <button
               className="delete-button"

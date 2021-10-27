@@ -2,6 +2,7 @@
 import './index.css'
 import {Component} from 'react'
 // import {FaRupeeSign} from 'react-icons/fa'
+import {BiRupee} from 'react-icons/bi'
 import {AiFillStar} from 'react-icons/ai'
 import CartContext from '../../context/CartContext'
 // import Counter from '../Counter'
@@ -68,14 +69,13 @@ class FoodItem extends Component {
                 <div className="card-content-align">
                   <h1 className="food-item-title">{name}</h1>
 
-                  {/* <span className="food-item-desc">
-                    <FaRupeeSign /> {cost} /-
-                  </span> */}
-                  <p className="food-item-desc">{cost}</p>
+                  <span className="food-item-desc">
+                    <BiRupee className="rupee-icon" /> {cost} /-
+                  </span>
 
                   <div className="rating-container">
                     <AiFillStar fill="#FFCC00" className="star-icon" />
-                    <p className="food-item-rating">{rating}</p>
+                    <span className="food-item-rating">{rating}</span>
                   </div>
                   {quantity === 0 ? (
                     <button

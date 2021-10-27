@@ -11,6 +11,9 @@
   margin-top: 5px;
   flex-shrink: 0;
 }
+.rupee-icon {
+  margin-top: 0;
+}
 
 .food-item-title {
   font-family: 'DM Sans';
