@@ -1,4 +1,3 @@
-// Write your code here
 import './index.css'
 import {Component} from 'react'
 // import {FaRupeeSign} from 'react-icons/fa'
@@ -22,7 +21,7 @@ class FoodItem extends Component {
             decrementCartItemQuantity,
           } = value
           const {quantity} = this.state
-          const {jobDetails} = this.props
+          const {foodDetails} = this.props
 
           const {
             name,
@@ -31,14 +30,14 @@ class FoodItem extends Component {
             imageUrl,
             rating,
             id,
-          } = jobDetails
+          } = foodDetails
 
           const onAddToCart = () => {
             this.setState(
               prevState => ({
                 quantity: prevState.quantity + 1,
               }),
-              addCartItem({...jobDetails, quantity: 1}),
+              addCartItem({...foodDetails, quantity: 1}),
             )
           }
 

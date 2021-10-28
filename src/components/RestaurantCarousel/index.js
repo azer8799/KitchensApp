@@ -2,8 +2,6 @@ import {Component} from 'react'
 import Cookies from 'js-cookie'
 import Loader from 'react-loader-spinner'
 import Slider from 'react-slick'
-
-// import ProductCard from '../ProductCard'
 import CarouselItem from '../CarouselItem'
 import './index.css'
 
@@ -70,8 +68,8 @@ class RestaurantCarousel extends Component {
       <div>
         <ul className="products-list">
           <Slider {...settings}>
-            {restaurantOffers.map(eachPlanet => (
-              <CarouselItem carouselDetails={eachPlanet} key={eachPlanet.id} />
+            {restaurantOffers.map(eachItem => (
+              <CarouselItem carouselDetails={eachItem} key={eachItem.id} />
             ))}
           </Slider>
         </ul>
@@ -80,11 +78,7 @@ class RestaurantCarousel extends Component {
   }
 
   renderOffersFailureView = () => (
-    <img
-      src="https://assets.ccbp.in/frontend/react-js/exclusive-deals-banner-img.png"
-      alt="Register Prime"
-      className="register-prime-image"
-    />
+    <h1> The requested page could not be found.</h1>
   )
 
   renderLoadingView = () => (

@@ -2,7 +2,6 @@ import Header from '../Header'
 import CartListView from '../CartListView'
 import CartContext from '../../context/CartContext'
 import EmptyCartView from '../EmptyCartView'
-// import CartSummary from '../CartSummary'
 
 import './index.css'
 import CartSummary from '../CartSummary'
@@ -23,7 +22,6 @@ const Cart = () => (
             ) : (
               <div className="cart-content-container">
                 <CartListView />
-                {/* TODO: Add your code for Cart Summary here */}
                 <div className="cart-sum-container">
                   <CartSummary />
                 </div>
